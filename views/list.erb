@@ -1,0 +1,6 @@
+<% @cookbook.recipes.each_with_index do | recipe, idx | %>
+    <ul><%= "[#{recipe.done?}] #{idx + 1}. #{recipe.name.capitalize} (#{recipe.prep_time}, #{recipe.difficulty}): #{recipe.description}."%></ul>
+    <br/>
+<% end %>
+
+<a href="http://localhost:4567/new"> Create new recipe</a>
